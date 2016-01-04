@@ -1,0 +1,6 @@
+c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\ReinforcementLearning\bin\Debug\ReinforcementLearning.exe.config
+c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\ReinforcementLearning\obj\Debug\ReinforcementLearning.csprojResolveAssemblyReference.cache
+c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\ReinforcementLearning\bin\Debug\ReinforcementLearning.exe
+c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\ReinforcementLearning\bin\Debug\ReinforcementLearning.pdb
+c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\ReinforcementLearning\obj\Debug\ReinforcementLearning.exe
+c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\ReinforcementLearning\obj\Debug\ReinforcementLearning.pdb
