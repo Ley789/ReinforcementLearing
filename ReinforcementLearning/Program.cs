@@ -15,23 +15,28 @@ namespace ReinforcementLearning
 
             Console.WriteLine("Our initialized value function per state.");
             dpIteration.PrintV();
+            Console.ReadLine();
             Console.WriteLine("Now after Vlaue Iteration");
             dpIteration.ValueIteration();
             dpIteration.PrintV();
+
+            Console.ReadLine(); 
             Console.WriteLine("Now after Policy evaluation");
             dpEvalAndImprov.PolicyEvaluation(1000);
             dpEvalAndImprov.PrintV();
 
+            Console.ReadLine();
             Console.WriteLine("Now we improve our Policy");
             Console.WriteLine("This is after Value Iteration");
             dpIteration.PolicyImprovement();
             dpIteration.PrintP();
+
+            Console.ReadLine(); 
             Console.WriteLine("This is after Policy evaluation");
             dpEvalAndImprov.PolicyImprovement();
             dpEvalAndImprov.PrintP();
 
-      
-            Console.Read();
+            Console.ReadLine();
         }
     }
 }
