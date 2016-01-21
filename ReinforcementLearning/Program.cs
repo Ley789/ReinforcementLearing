@@ -10,13 +10,25 @@ namespace ReinforcementLearning
     {
         static void Main(string[] args)
         {
-            Dynamic dp = new Dynamic();
+            Dynamic dpIteration = new Dynamic();
+            Dynamic dpEvalAndImprov = new Dynamic();
 
-  
-            dp.PolicyEvaluation(997);
-            dp.PrintV();
-            dp.PolicyImprovement();
-            dp.PrintP();
+            Console.WriteLine("Our initialized value function per state.");
+            dpIteration.PrintV();
+            Console.WriteLine("Now after Vlaue Iteration");
+            dpIteration.ValueIteration();
+            dpIteration.PrintV();
+            Console.WriteLine("Now after Policy evaluation");
+            dpEvalAndImprov.PolicyEvaluation(1000);
+            dpEvalAndImprov.PrintV();
+
+            Console.WriteLine("Now we improve our Policy");
+            Console.WriteLine("This is after Value Iteration");
+            dpIteration.PolicyImprovement();
+            dpIteration.PrintP();
+            Console.WriteLine("This is after Policy evaluation");
+            dpEvalAndImprov.PolicyImprovement();
+            dpEvalAndImprov.PrintP();
 
       
             Console.Read();

@@ -9,11 +9,11 @@ namespace World
     class Gridworld
     {
         //static parameter to change gridwold properties
-        public int length = 7;
-        public int height = 7;
+        public int length = 5;
+        public int height = 5;
         //to keep it simple we will address each field with a number,
         //we start to count by [0][0] = 0 , [0][1] = 1, ... , [n][m] = n * length + m
-        private static int[] terminalStates = { 24, 0 , 30 };
+        private static int[] terminalStates = { 24 };
         public double[,] world;
         public Gridworld()
         {

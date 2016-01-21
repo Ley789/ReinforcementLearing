@@ -4,3 +4,9 @@ c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\R
 c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\ReinforcementLearning\bin\Debug\ReinforcementLearning.pdb
 c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\ReinforcementLearning\obj\Debug\ReinforcementLearning.exe
 c:\users\alexander\documents\visual studio 2013\Projects\ReinforcementLearning\ReinforcementLearning\obj\Debug\ReinforcementLearning.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\ReinforcementLearing\ReinforcementLearning\bin\Debug\ReinforcementLearning.exe.config
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\ReinforcementLearing\ReinforcementLearning\obj\Debug\ReinforcementLearning.exe
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\ReinforcementLearing\ReinforcementLearning\obj\Debug\ReinforcementLearning.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\ReinforcementLearing\ReinforcementLearning\bin\Debug\ReinforcementLearning.exe
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\ReinforcementLearing\ReinforcementLearning\bin\Debug\ReinforcementLearning.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\ReinforcementLearing\ReinforcementLearning\obj\Debug\ReinforcementLearning.csprojResolveAssemblyReference.cache

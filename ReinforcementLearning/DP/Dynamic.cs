@@ -48,6 +48,62 @@ namespace DP
             }
             return 0;
         }
+
+
+        public void ValueIteration()
+        {
+            Position p = new Position();
+            Position next;
+            double total;
+            double tmp = 0;
+            //delta indicates how much the value function has changed
+            double delta;
+            //omega denotes the minimum change for the vlaue function
+            //to terminate the calculation
+            double omega = 0.001;
+            do
+            {
+                delta = 0;
+                for (int j = 0; j < grid.height; j++)
+                {
+                    for (int k = 0; k < grid.length; k++)
+                    {
+                        p.Set(k, j);
+                        total = double.MinValue;
+                        foreach (AgentAction a in actions)
+                        {
+                            if (grid.Reward(p) == 0)
+                            {
+                                next = p;
+                            }
+                            else
+                            {
+                                next = grid.NextState(p, a);
+                            }
+                            tmp = (PolicityProb(a, p) * (grid.Reward(next) + discount * grid.world[next.y, next.x]));
+                            if (tmp > total)
+                            {
+                                total = tmp;
+                            }
+                        }
+                        //we check if the change is bigger
+                        delta = Math.Max(delta, Math.Abs(total - grid.world[j, k]));
+                        grid.world[j, k] = total;
+                    }
+                }
+            } while (delta > omega);
+            Console.WriteLine("Delta is " + delta);
+        }
+        
+        public void PoliciyImprovement(int steps)
+        {
+            for (int i = 0; i < steps; i++)
+            {
+                PolicyEvaluation(5000);
+                PolicyImprovement();
+            }
+        }
+
         public void PolicyEvaluation(int steps)
         {
             Position p = new Position();
@@ -77,6 +133,7 @@ namespace DP
                 }
             }
         }
+
         public void PolicyImprovement()
         {
             Position p = new Position();
@@ -151,6 +208,7 @@ namespace DP
                 Console.WriteLine();
             }
         }
+
         private void InitPolicy()
         {
             policy = new AgentAction[grid.height, grid.length][];
