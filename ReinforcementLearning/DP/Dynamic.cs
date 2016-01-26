@@ -92,7 +92,6 @@ namespace DP
                     }
                 }
             } while (delta > omega);
-            Console.WriteLine("Delta is " + delta);
         }
         
         public void PoliciyImprovement(int steps)

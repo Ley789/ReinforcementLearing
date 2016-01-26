@@ -33,7 +33,7 @@ namespace ReinforcementLearning
             Console.ReadLine();
             Console.WriteLine("We will go through the Policy Improvement iteration");
             
-            Console.WriteLine("Now after Vlaue Iteration of the initialized value");
+            Console.WriteLine("Now after Vlaue Iteration of the initialized value with omega 0.001");
             Console.ReadLine();
             dpIteration.ValueIteration();
             dpIteration.PrintV();
